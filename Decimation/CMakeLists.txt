@@ -21,6 +21,9 @@ find_package(ITK 5 COMPONENTS ${${PROJECT_NAME}_ITK_COMPONENTS} REQUIRED)
 set(ITK_NO_IO_FACTORY_REGISTER_MANAGER 1) # See Libs/ITKFactoryRegistration/CMakeLists.txt
 include(${ITK_USE_FILE})
 
+# VTK
+find_package(VTK REQUIRED COMPONENTS IOXML IOGeometry FiltersCore)
+
 #-----------------------------------------------------------------------------
 set(MODULE_INCLUDE_DIRECTORIES
   )
